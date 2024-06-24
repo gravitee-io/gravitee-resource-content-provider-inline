@@ -1,1 +1,53 @@
-# gravitee-resource-content-provider-inline
+= Resource SContent Provider API
+
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg["License", link="https://github.com/gravitee-io/gravitee-resource-content-provider-api/blob/main/LICENSE.txt"]
+image:https://img.shields.io/badge/semantic--release-conventional%20commits-e10079?logo=semantic-release["Releases", link="https://github.com/gravitee-io/gravitee-resource-content-provider-api/releases"]
+image:https://circleci.com/gh/gravitee-io/gravitee-resource-content-provider-api.svg?style=svg["CircleCI", link="https://circleci.com/gh/gravitee-io/gravitee-resource-content-provider-api"]
+image:https://f.hubspotusercontent40.net/hubfs/7600448/gravitee-github-button.jpg["Join the community forum", link="https://community.gravitee.io?utm_source=readme", height=20]
+
+
+== Description
+Inline Content Provider Resource is used to store a data and provide it to a compatible policy.
+
+== Configuration
+You can configure the resource with the following options:
+
+|===
+|Property |Required |Description |Type |Default
+
+.^|name
+^.^|X
+|The name of the content provider.
+^.^|string
+^.^|my-content-provider
+
+
+.^|content
+^.^|X
+|The content to store
+^.^|integer
+^.^|
+
+.^|attributes
+^.^|X
+|An array of key value pairs that can be used by a resource consumer.
+^.^|object
+^.^|
+
+|===
+
+[source, json]
+.Configuration example
+----
+{
+    "name": "content-resource",
+    "type": "content-provider-inline-resource",
+    "enabled": true,
+    "configuration": {
+        "content": "The content provided by the resource",
+        "attributes": {
+            "key": "value"
+        }
+    }
+}
+----
