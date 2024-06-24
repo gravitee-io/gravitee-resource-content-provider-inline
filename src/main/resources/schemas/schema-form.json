@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "definitions": {
+        "_content": {
+            "type": "string",
+            "title": "Content",
+            "description": "The content to provide"
+        },
+        "_attributes": {
+            "type": "array",
+            "title": "Attributes",
+            "description": "List of attributes as key value pairs",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "title": "Key"
+                    },
+                    "value": {
+                        "type": "string",
+                        "title": "Value"
+                    }
+                },
+                "required": ["key", "value"]
+            }
+        }
+    },
+    "oneOf": [
+        {
+            "title": "Content",
+            "properties": {
+                "content": { "$ref": "#/definitions/_content" },
+                "attributes": { "$ref": "#/definitions/_attributes" }
+            },
+            "required": ["content"]
+        }
+    ]
+}
