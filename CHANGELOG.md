@@ -1,3 +1,10 @@
+# [1.0.0-alpha.3](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.2...1.0.0-alpha.3) (2024-06-26)
+
+
+### Bug Fixes
+
+* properly add resource to zip and fix schema form ([0a7b063](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/0a7b063f861de65613e65d274bdcc64e2ab62815))
+
 # [1.0.0-alpha.2](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.1...1.0.0-alpha.2) (2024-06-26)
 
 
