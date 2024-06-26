@@ -32,6 +32,7 @@
     <version>1.0.0-alpha.2</version>
 
     <name>Gravitee.io APIM - Resource - Content Provider Inline</name>
+    <description>The resource is used to store an inline text and provide it to compatible policies.</description>
 
     <properties>
         <gravitee-bom.version>8.1.0</gravitee-bom.version>
@@ -39,6 +40,7 @@
         <gravitee-resource-content-provider-api.version>1.0.0-alpha.1</gravitee-resource-content-provider-api.version>
         <maven-plugin-javadoc.version>3.4.1</maven-plugin-javadoc.version>
         <maven-assembly-plugin.version>3.7.1</maven-assembly-plugin.version>
+        <maven-properties-plugin.version>1.2.1</maven-properties-plugin.version>
 
         <!-- Property used by the publication job in CI-->
         <publish-folder-path>graviteeio-apim/plugins/resources</publish-folder-path>
@@ -112,6 +114,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -125,6 +133,26 @@
             <plugin>
                 <groupId>com.hubspot.maven.plugins</groupId>
                 <artifactId>prettier-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>${maven-properties-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <id>load-plugin-properties</id>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>${project.basedir}/src/main/resources/plugin.properties</file>
+                            </files>
+                            <quiet>false</quiet>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
