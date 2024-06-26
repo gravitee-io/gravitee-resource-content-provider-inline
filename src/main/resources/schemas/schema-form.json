@@ -1,41 +1,43 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "additionalProperties": false,
-    "definitions": {
-        "_content": {
+    "id": "urn:jsonschema:io:gravitee:resource:cache:configuration:CacheResourceConfiguration",
+    "properties": {
+        "content": {
             "type": "string",
             "title": "Content",
-            "description": "The content to provide"
+            "description": "The content to provide",
+            "x-schema-form": {
+                "type": "codemirror",
+                "codemirrorOptions": {
+                    "placeholder": "Put inline content here",
+                    "lineWrapping": true,
+                    "lineNumbers": true,
+                    "allowDropFileTypes": true,
+                    "autoCloseTags": true
+                },
+                "expression-language": false
+            }
         },
-        "_attributes": {
+        "attributes": {
             "type": "array",
             "title": "Attributes",
             "description": "List of attributes as key value pairs",
             "items": {
                 "type": "object",
+                "title": "Attribute",
                 "properties": {
                     "key": {
-                        "type": "string",
-                        "title": "Key"
+                        "title": "Key",
+                        "type": "string"
                     },
                     "value": {
-                        "type": "string",
-                        "title": "Value"
+                        "title": "Value",
+                        "type": "string"
                     }
-                },
-                "required": ["key", "value"]
-            }
+                }
+            },
+            "required": ["name", "value"]
         }
     },
-    "oneOf": [
-        {
-            "title": "Content",
-            "properties": {
-                "content": { "$ref": "#/definitions/_content" },
-                "attributes": { "$ref": "#/definitions/_attributes" }
-            },
-            "required": ["content"]
-        }
-    ]
+    "required": ["content"]
 }
