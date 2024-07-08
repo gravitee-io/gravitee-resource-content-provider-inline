@@ -1,3 +1,10 @@
+# [1.0.0-alpha.4](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.3...1.0.0-alpha.4) (2024-07-08)
+
+
+### Bug Fixes
+
+* add resource icon ([8ce5988](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/8ce5988ca3dc64af98d210be56d749456efb553d))
+
 # [1.0.0-alpha.3](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.2...1.0.0-alpha.3) (2024-06-26)
 
 
