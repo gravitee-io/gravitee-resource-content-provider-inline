@@ -1,22 +1,12 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "id": "urn:jsonschema:io:gravitee:resource:cache:configuration:CacheResourceConfiguration",
     "properties": {
         "content": {
             "type": "string",
             "title": "Content",
             "description": "The content to provide",
-            "x-schema-form": {
-                "type": "codemirror",
-                "codemirrorOptions": {
-                    "placeholder": "Put inline content here",
-                    "lineWrapping": true,
-                    "lineNumbers": true,
-                    "allowDropFileTypes": true,
-                    "autoCloseTags": true
-                },
-                "expression-language": false
-            }
+            "format": "gio-code-editor"
         },
         "attributes": {
             "type": "array",
