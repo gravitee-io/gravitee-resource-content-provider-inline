@@ -1,3 +1,10 @@
+# [1.0.0-alpha.5](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.4...1.0.0-alpha.5) (2024-07-12)
+
+
+### Features
+
+* rework schema-form to use new GioJsonSchema Ui component ([959924b](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/959924b1e698d7d29a3f9720363451c49b89bd12))
+
 # [1.0.0-alpha.4](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.3...1.0.0-alpha.4) (2024-07-08)
 
 
