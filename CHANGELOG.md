@@ -1,3 +1,17 @@
+# 1.0.0 (2024-08-12)
+
+
+### Bug Fixes
+
+* add assembly plugin to build zip ([f4e25ac](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/f4e25ac34f596440eae8d628b7871ce04b5fafd5))
+* add resource icon ([155f627](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/155f6278ed604c1bb4c6b2b30fc6596a3b73c6f4))
+* properly add resource to zip and fix schema form ([5fb0a64](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/5fb0a645e87a61b52e845516fbcbad6d20dbf2a7))
+
+
+### Features
+
+* init implementation of content provider inline ([3dae866](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/3dae866cc940f1bba6f22e0b63fa02faf6e9099e))
+
 # [1.0.0-alpha.4](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0-alpha.3...1.0.0-alpha.4) (2024-07-08)
 
 
