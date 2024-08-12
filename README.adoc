@@ -1,4 +1,4 @@
-= Resource SContent Provider API
+= Inline Content Provider Resource
 
 image:https://img.shields.io/badge/License-Apache%202.0-blue.svg["License", link="https://github.com/gravitee-io/gravitee-resource-content-provider-api/blob/main/LICENSE.txt"]
 image:https://img.shields.io/badge/semantic--release-conventional%20commits-e10079?logo=semantic-release["Releases", link="https://github.com/gravitee-io/gravitee-resource-content-provider-api/releases"]
