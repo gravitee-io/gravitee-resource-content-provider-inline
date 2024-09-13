@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.1.0...1.1.1) (2024-09-13)
+
+
+### Bug Fixes
+
+* bump gravitee-resource-content-provider-api to 1.0.0 ([9636947](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/commit/96369474598284950e2d347cf59d50bb26ac3fc0))
+
 # [1.1.0](https://github.com/gravitee-io/gravitee-resource-content-provider-inline/compare/1.0.0...1.1.0) (2024-09-09)
 
 
